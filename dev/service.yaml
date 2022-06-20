@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: simple-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: trivial-go-web-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
+      nodePort: 32000

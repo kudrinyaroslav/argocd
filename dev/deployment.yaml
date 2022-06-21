@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: webserver-simple
-        image: nginx
+        image: mongo
         ports:
         - containerPort: 80
